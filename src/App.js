@@ -4,7 +4,7 @@ import Login from './view/pages/login';
 import Register from './view/pages/register';
 import AuthHandler from './view/pages/redirect';
 
-function App(props) {
+function App() {
   return (
     <div>
       <BrowserRouter>
