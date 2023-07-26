@@ -1,5 +1,6 @@
 import { Grid } from "@mui/material";
 import { Box, Container, Typography, TextField, Button } from "@mui/material";
+import { Link } from 'react-router-dom';
 
 const Register = () => {
   const handleSubmit = (event) => {
@@ -101,6 +102,12 @@ const Register = () => {
           >
             Sign Up
           </Button>
+
+          <div>
+            <Button component={Link} to="/login" variant="contained" fullWidth>
+                Login
+            </Button>
+          </div>    
           <Grid container justifyContent="flex-end"></Grid>
         </Box>
       </Box>

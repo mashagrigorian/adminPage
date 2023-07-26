@@ -6,16 +6,17 @@ import AuthHandler from './view/pages/redirect';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<AuthHandler />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-        </Routes>
+            <Route path="/" element={<AuthHandler />} />
+            <Route path="/login" element={<Login />} />
+            <Route path='/register' element={<Register />} />
+        </Routes>      
       </BrowserRouter>
     </div>
   );
 }
+
 
 export default App;
